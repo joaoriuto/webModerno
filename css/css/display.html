@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        /* ... */
+        body {
+            font-size: 40px;
+            color: #fff;
+            background-color: coral;
+        }
+        ul {
+            padding: 0;
+        }
+        div {
+            background-color: seagreen;
+        }
+        span {
+            background-color: dodgerblue;
+        }
+        li {
+            background-color: purple;
+        }
+
+        div, span, li, ul {
+            width: 50%;
+            width: 200px;
+            height: 80px;
+
+            padding-top: 30px;
+            /* margin: 100px; */
+            text-align: center;
+            display: block;
+            /* display: inline; */
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>Texto 1</div>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>
+<!-- O modo display tem comportamentos específicos, sendo
+que em display inline os elementos se comportam em linha
+e não sofrem o efeito de altura e largura, porém o padding
+pode ser aplicado.
+
+O display block tem comportamento de caixa e os itens se
+comportam de forma organizada em cada linha, sofrendo o 
+efeito de altura, largura, padding e margin.
+
+O modo display: inline-block é organizado de forma inline
+porém assumem o comportamento de bloco->

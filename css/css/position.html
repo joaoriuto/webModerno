@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        /* ... */
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+        }
+
+        .static {
+            top: 100px; /* Static não considera */
+            left: 100px; /* Static não considera */
+            background-color: steelblue;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 40px;
+            right: 0px;
+            background-color: tomato;
+        }
+
+        .relative1 {
+            position: relative;
+            left: 50px;
+            top: 5px;
+            background-color: seagreen;
+            /* Comporta-se em relação ao item anterior a ele
+            posicionando de forma a estrapolar as medidas */
+        }
+        
+        .absolute1 {
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color: violet;
+        }
+
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategrey;
+        }
+
+        .absolute2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+        }
+
+        .sticky {
+            position: webkit-sticky;
+            position: sticky;
+            background-color: #777;
+            top: 0px;
+            margin: 0px;
+            left: 0px;
+            border-radius: 25px;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="sticky">Sticky</div>
+    <div class="static">Static (Padrão)</div>
+    <div class="fixed">Fixed</div>
+    <div class="relative1">Relative</div>
+    <div class="absolute1">Absolute</div>
+
+    <div class="relative2">
+        <div class="absolute2"></div>
+    </div>
+
+    <!-- <div class="sticky">Sticky</div> -->
+    <p style="padding-bottom: 2000px;">Opa</p>
+</body>
+
+</html>

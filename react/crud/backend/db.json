@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Maria Julia da Silvas",
+      "email": "mjds@empresa.com"
+    },
+    {
+      "name": "João Pedro Mendes do Couto Riuto",
+      "email": "jr00.dat@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "AdicionarNovo",
+      "email": "null",
+      "id": 4
+    }
+  ]
+}

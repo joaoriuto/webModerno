@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="corpo"></div>
+        <div class="transparente"></div>
+    </body>
+    <style>
+        body{
+            background-image: url('bg2.jpg');
+            background-size: 250px;  
+            background-attachment: fixed;          
+        }
+        .corpo {
+            position:relative;
+            height: 2000px;
+            background-color:rgb(63, 63, 63);
+            top: 400px;
+            opacity: 90%;
+            margin:0;
+            width: 80%;
+            align-items:center;
+            justify-content:center;
+            flex-direction: row;
+            display:flex;
+            vertical-align:middle;
+            left:10vw;
+            
+        }
+        .transparente {
+            
+            position:absolute;
+            top:200px;
+            background-color:rgba(0, 0, 0, 0.11);
+            border: solid red 5px;
+            height: 500px;
+            width: 99%;
+        }
+    </style>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 45px;
+        }
+        div{
+            background-color: deepskyblue;
+            width: 100%;
+            height: 300px;
+            padding: 100px;
+            border: solid 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        O tamanho do Box é...
+    </div>
+</body>
+</html>
+
+<!-- Por padrão o tamanho de um block não leva em condideraçãp
+o padding e a borda, causando a estrapolação para além dos
+100% definidos em uma div por exemplo;
+
+Porém existe uma propriedade que pode ser marcada para que
+os elementos do tipo block levem em consideração o padding
+e a borda, como o tamanho total do elemento: box-sizing: border-box
+e isso facilita no dimensionamento fino. 
+
+Esta propriedade pode ser aplicada para todo o conteúdo da
+página, utilizando o seletor universal: * -->

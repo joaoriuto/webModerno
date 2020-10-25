@@ -1,0 +1,102 @@
+<div id="container">
+
+        <img class="ativa" src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+            alt="Muro da cidade"       
+            title="Muro da cidade por Tarso Bessa">
+    
+    
+  
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+            alt="Intro Cod3r">
+   
+    
+
+       <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
+        alt="Rio de Janeiro">
+   
+    
+ 
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+            alt="Avatar">
+           
+  
+    </div>
+    
+    <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+                media="(min-width: 600px)">
+                <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo"> 
+    </picture> 
+
+    <style>
+
+        img {
+            position:absolute;
+            width: 100%;
+            height:100%;
+            margin-left:100%;
+
+            -webkit-transition: margin-left 500ms ease-in;
+            -moz-transition: margin-left 500ms ease-in;
+            -o-transition: margin-left 500ms ease-in;
+            transition: margin-left 500ms ease-in;
+        }
+
+        div {
+            overflow:hidden;
+            position:relative;
+            width:643px;
+            height:350px;
+        }
+
+        .ativa{
+            margin-left:0%;
+        }
+    </style>
+    
+    <script>
+        let proximaImagem = 1;
+        let zIndexAtual = 0;
+        let imagens = document.getElementById("container").children;
+
+        function avancarImagem(){
+            imagem = imagens[proximaImagem];
+            imagem.style.zIndex = ++zIndexAtual;
+            imagem.style.marginLeft = "0%";
+
+            proximaImagem++
+
+            if(proximaImagem >= imagens.length){
+                proximaImagem = 0;
+            }
+
+            setTimeout(resetarImagens, 500)
+        }
+
+        function resetarImagens(){
+            imagemVisivel = proximaImagem -1;
+
+            if(imagemVisivel < 0){
+                imagemVisivel = imagens.length -1;
+            }
+
+            for(let i = 0; i < imagens.length; i++){
+                if(i != imagemVisivel){
+                    imagens[i].style.marginLeft = "100%"
+                }
+            }
+        }
+
+        let intervalo = setInterval(avancarImagem, 2000)
+
+
+
+        
+
+        // avancarImagem()
+        // resetarImagens()
+
+
+    </script>
+    
+    

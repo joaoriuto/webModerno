@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origem CSS: Externo, Interno e Inline</title>
+    <style>
+        /* ... */
+        body{
+            background-color:seagreen;
+        }
+        </style>
+        <link rel="stylesheet" href="css/externo.css"> <!-- A ordem de precedência depende da última posição. -->
+</head>
+
+<body>
+    <h1>E agora?</h1> <!-- Se o estilo for explícito inline, terá precedência aos demais -->
+</body>
+
+</html>
+<!-- É uma boa prática a aplicação de estilos em arquivos separados. Quando queremos testar alguma propriedade
+o estilo inline poderá ser utilizado, mas sabendo que o melhor é a disposição do código em arquivos organizados
+e também é bom ter em mente, que a ordem de precedência é pela posição do último elemento ou por atribuição
+inline. quando fluimos no código o nosso cérebro se sente mais relaxado para poder pensar melhor em coisas mais
+sérias para o desenvolvimento de toda a aplicação, e isso é realmente fantástico!! Eu amo códificar da melhor
+forma possível e o objetivo é sempre melhorar no que se está inseguro e aperfeiçoar o que já está seguro. -->

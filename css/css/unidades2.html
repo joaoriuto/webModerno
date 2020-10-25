@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+        /* Comportamento da div ao ser aplicado os modos
+        de posicionamento em refêrencia ao conteúdo ou ao
+        viewport */
+
+        .fora{
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+
+        .dentro{
+            background-color: mediumvioletred;
+            height: 100px;
+            width: 100%;
+            position: static; /* Padrão - conteúdo*/
+            position: relative; /* Conteúdo - relação a sí próprio */
+            position: absolute; /* Conteúdo + padding */
+            position: fixed; /* Relação ao ViewPort */
+        }
+    </style>
+</head>
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+</html>
